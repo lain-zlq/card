@@ -18,7 +18,7 @@ def check_compatibility(click_version):
 
 # 验证依赖包版本
 try:
-    check_compatibility(pandas.__version__, pandas.__version__)
+    check_compatibility(pandas.__version__)
 except (AssertionError, ValueError):
     warnings.warn("pandas ({}) doesn't match a supported "
                   "version!".format(pandas.__version__),
